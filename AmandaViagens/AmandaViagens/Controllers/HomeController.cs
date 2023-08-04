@@ -23,6 +23,21 @@ public class HomeController : Controller
         return View();
     }
 
+     public IActionResult Cruzeiros()
+    {
+        return View();
+    }
+
+     public IActionResult Feedback()
+    {
+        return View();
+    }
+
+     public IActionResult Sobre()
+    {
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();

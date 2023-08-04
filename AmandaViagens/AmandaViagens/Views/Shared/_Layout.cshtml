@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/animate.css">
     <link rel="stylesheet" type="text/css" href="~/styles/main_styles.css">
     <link rel="stylesheet" type="text/css" href="~/styles/responsive.css">
+    @RenderSection("Styles", required: false)
 </head>
 
 <body>
@@ -66,9 +67,9 @@
                                 <ul class="main_nav_list">
                                     <li class="main_nav_item"><a asp-action="Index" asp-controller="Home">home</a></li>
                                     <li class="main_nav_item"><a asp-action="Ingressos" asp-controller="Home">Ingressos</a></li>
-                                    <li class="main_nav_item"><a href="offers.html">Cruzeiros</a></li>
-                                    <li class="main_nav_item"><a href="blog.html">Feedback</a></li>
-                                    <li class="main_nav_item"><a href="contact.html">Sobre Nós</a></li>
+                                    <li class="main_nav_item"><a asp-action="Cruzeiros" asp-controller="Home">Cruzeiros</a></li>
+                                    <li class="main_nav_item"><a asp-action="Feedback" asp-controller="Home">Feedback</a></li>
+                                    <li class="main_nav_item"><a asp-action="Sobre" asp-controller="Home">Sobre Nós</a></li>
                                 </ul>
                             </div>
                             <div class="content_search ml-lg-0 ml-auto">
@@ -255,11 +256,11 @@
                         <div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
                             <div class="footer_nav">
                                 <ul class="footer_nav_list">
-                                    <li class="main_nav_item"><a href="#">home</a></li>
-                                    <li class="main_nav_item"><a href="about.html">Ingressos</a></li>
-                                    <li class="main_nav_item"><a href="offers.html">Cruzeiros</a></li>
-                                    <li class="main_nav_item"><a href="blog.html">Feedback</a></li>
-                                    <li class="main_nav_item"><a href="contact.html">Sobre Nós</a></li>
+                                    <li class="main_nav_item"><a asp-action="Index" asp-controller="Home">home</a></li>
+                                    <li class="main_nav_item"><a asp-action="Ingressos" asp-controller="Home">Ingressos</a></li>
+                                    <li class="main_nav_item"><a asp-action="Cruzeiros" asp-controller="Home">Cruzeiros</a></li>
+                                    <li class="main_nav_item"><a asp-action="Feedback" asp-controller="Home">Feedback</a></li>
+                                    <li class="main_nav_item"><a asp-action="Sobre" asp-controller="Home">Sobre Nós</a></li>
                                 </ul>
                             </div>
                         </div>
