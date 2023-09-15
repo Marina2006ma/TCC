@@ -1542,7 +1542,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to right, #F2E1AE, #023959);
 }
 
 /*********************************
@@ -1565,7 +1565,7 @@ section
 	left: 41px;
 	width: 72px;
 	height: 72px;
-	background: #fa9e1b;
+	background: #023959;
 	border-radius: 50%;
 	overflow: hidden;
 }
@@ -1588,7 +1588,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 44.1%;
-	background: rgba(49, 18, 75, 0.8);
+	background: #46a6a6b6;
 }
 .test_content
 {
