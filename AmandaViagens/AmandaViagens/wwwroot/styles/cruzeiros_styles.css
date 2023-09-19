@@ -1397,7 +1397,7 @@ section
 	bottom: 27px;
 	width: 180px;
 	height: 33px;
-	background: #fa9e1b;
+	background: #023959;
 	overflow: hidden;
 }
 .offer_name a
@@ -1419,14 +1419,14 @@ section
 	display: inline-block;
 	font-size: 36px;
 	font-weight: 700;
-	color: #eda84a;
+	color: #023959;
 	line-height: 25px;
 }
 .offers_price span
 {
 	font-size: 14px;
 	font-weight: 400;
-	color: #929191;
+	color: #46A6A6;
 	margin-left: 12px;
 }
 .offers_rating
@@ -1461,7 +1461,7 @@ section
 }
 .book_button
 {
-	background: #31124b;
+	background: #023959;
 	margin-top: 39px;
 	margin-bottom: -5px;
 	-webkit-transition: all 200ms ease;
