@@ -1293,7 +1293,7 @@ section
 {
 	padding-top: 125px;
 	padding-bottom: 116px;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to right, #023959, #8d4fff);
 }
 .cta_background
 {
@@ -1488,7 +1488,6 @@ section
 	font-size: 14px;
 	font-weight: 400;
 	color: #929191;
-	margin-top: 16px;
 }
 .offers_icons
 {
