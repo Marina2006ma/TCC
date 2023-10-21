@@ -366,7 +366,7 @@ section
 }
 .social_list_item:hover a i
 {
-	color: #fa9e1c;
+	color: #F2E1AE;
 }
 .social_list_item a i
 {
@@ -397,7 +397,7 @@ section
 }
 .user_box_link a:hover
 {
-	color: #fa9e1c;
+	color: #F2E1AE;
 }
 .user_box_login
 {
@@ -504,7 +504,7 @@ section
 	bottom: -11px;
 	width: calc(100% + 2px);
 	height: 2px;
-	background: linear-gradient(to right, #fa9e1b, #46a6a6);
+	background: linear-gradient(to right, #F2E1AE, #023959);
 	content: '';
 	opacity: 0;
 	-webkit-transition: all 200ms ease;
@@ -2048,7 +2048,7 @@ section
 }
 .tag_item:hover
 {
-	background: #fa9e1b;
+	background: #F2E1AE;
 }
 .tag_item a
 {
