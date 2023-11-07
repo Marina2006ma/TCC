@@ -1,12 +1,24 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using AmandaViagens.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
-namespace AmandaViagens.Data
+namespace AmandaViagens.Data;
+
+public class AppDbContext : IdentityDbContext
 {
-    public class AppDbContext
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
-        
     }
+
+    public DbSet<Cruzeiro> Cruzeiros { get; set; }
+    public DbSet<Ingresso> Ingressos { get; set; }
+    public DbSet<PontoTuristico> PontoTuristicos { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+        AppDbSeed seed = new(builder);
+    }
+
 }
+
