@@ -78,7 +78,7 @@ ul
 }
 p
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Itim';
 	font-size: 14px;
 	line-height: 2;
 	font-weight: 400;
@@ -135,7 +135,7 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Itim';
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -450,7 +450,7 @@ section
 }
 .logo a
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Itim';
 	font-size: 30px;
 	color: #f4f4f8;
 	font-weight: 800;
@@ -488,7 +488,7 @@ section
 }
 .main_nav_item a
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Itim';
 	font-size: 13px;
 	font-weight: 600;
 	color: #FFFFFF;
@@ -660,7 +660,7 @@ section
 {
 	display: inline-block;
 	position: relative;
-	font-family: 'Beyond';
+	font-family: 'Itim';
 	font-size: 36px;
 	color: #FFFFFF;
 	font-weight: 400;
@@ -808,7 +808,7 @@ section
 }
 .home_slider_content h1:nth-child(2)
 {
-	font-family: 'Beyond';
+	font-family: 'Itim';
 	font-size: 100px;
 	color: #FFFFFF;
 	margin-top: -34px;
@@ -1344,7 +1344,7 @@ section
 }
 .rating_r i::before
 {
-	font-family: 'FontAwesome';
+	font-family: 'Itim';
 	content: "\f006";
 	font-style: normal;
 	font-size: 19px;

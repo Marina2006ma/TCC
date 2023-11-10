@@ -13,6 +13,7 @@ public class AppDbContext : IdentityDbContext
     public DbSet<Cruzeiro> Cruzeiros { get; set; }
     public DbSet<Ingresso> Ingressos { get; set; }
     public DbSet<PontoTuristico> PontoTuristicos { get; set; }
+     public DbSet<Usuario> Usuarios { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
