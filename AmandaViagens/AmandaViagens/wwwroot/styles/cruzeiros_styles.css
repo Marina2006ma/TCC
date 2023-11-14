@@ -765,6 +765,7 @@ section
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	background-color: #F2E1AE9c;
 }
 .home_content
 {
@@ -779,11 +780,12 @@ section
 }
 .home_title
 {
-	font-size: 72px;
+	font-size: 70px;
 	font-weight: 800;
-	color: #023959;
+	color: #FFFFFF;
 	text-transform: uppercase;
 	white-space: nowrap;
+
 }
 
 /*********************************
@@ -1395,7 +1397,7 @@ section
 	position: absolute;
 	left: 0;
 	bottom: 27px;
-	width: 50%;
+	width: 80%;
 	height: 33px;
 	background: #023959;
 	overflow: hidden;
