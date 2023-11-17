@@ -402,8 +402,9 @@
 	}
 	.logo a img
 	{
-		width: 16px;
-		margin-right: 7px;
+		width: 150px;
+		margin-right: 20px;
+		padding: 20px 20px 20px 20px;
 	}
 	.hamburger i
 	{
@@ -565,7 +566,7 @@
 	}
 	.intro_text p
 	{
-		font-size: 16px;
+		font-size: 14px;
 	}
 }
 

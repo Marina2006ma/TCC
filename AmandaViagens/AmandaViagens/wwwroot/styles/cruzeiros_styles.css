@@ -39,7 +39,7 @@
 1. Fonts
 ***********/
 
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /*********************************
 2. Body and some general stuff
@@ -47,7 +47,7 @@
 
 *
 {
-	font-family: 'Itim';
+	font-family: 'Roboto';
 	margin: 0;
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
@@ -56,7 +56,7 @@
 }
 body
 {
-	font-family: 'Itim';
+	font-family: 'Roboto';
 	font-size: 14px;
 	font-weight: 400;
 	background: #FFFFFF;
@@ -77,7 +77,7 @@ ul
 }
 p
 {
-	font-family: 'Itim';
+	font-family: 'Roboto';
 	font-size: 14px;
 	line-height: 2;
 	font-weight: 400;
@@ -134,7 +134,7 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Itim';
+	font-family: 'Roboto';
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -455,7 +455,7 @@ section
 }
 .logo a
 {
-	font-family: 'Itim';
+	font-family: 'Roboto';
 	font-size: 30px;
 	color: #f4f4f8;
 	font-weight: 800;
@@ -493,8 +493,8 @@ section
 }
 .main_nav_item a
 {
-	font-family: 'Itim';
-	font-size: 13px;
+	font-family: 'Roboto';
+	font-size: 14px;
 	font-weight: 600;
 	color: #FFFFFF;
 	text-transform: uppercase;
@@ -669,7 +669,7 @@ section
 {
 	display: inline-block;
 	position: relative;
-	font-family: 'Itim';
+	font-family: 'Roboto';
 	font-size: 36px;
 	color: #FFFFFF;
 	font-weight: 400;
@@ -765,7 +765,7 @@ section
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	background-color: #F2E1AE9c;
+	background-color: #f2e1ae60;
 }
 .home_content
 {
@@ -834,7 +834,7 @@ section
 .rating_5 i:nth-child(4){color: #fa9e1b;}
 .rating_r i::before
 {
-	font-family: 'Itim';
+	font-family: 'Roboto';
 	content: "\f006";
 	font-style: normal;
 	font-size: 19px;
@@ -1204,7 +1204,7 @@ section
 	width: 10px;
 	height: 10px;
 	content: '+';
-	font-family: 'Itim';
+	font-family: 'Roboto';
 	font-size: 13px;
 	line-height: 8px;
 	color: #FFFFFF;
@@ -1397,7 +1397,7 @@ section
 	position: absolute;
 	left: 0;
 	bottom: 27px;
-	width: 80%;
+	width: 50%;
 	height: 33px;
 	background: #023959;
 	overflow: hidden;
