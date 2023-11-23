@@ -24,6 +24,8 @@
 /************
 1. 1600px
 ************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
 
 @media only screen and (max-width: 1600px)
 {
