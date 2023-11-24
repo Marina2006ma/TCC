@@ -1,0 +1,66 @@
+﻿@model AmandaViagens.ViewModels.LoginVM
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+<main class="container-fluid">
+    <form method="post">
+        <a asp-action="Index" asp-controller="Home"
+         class="d-flex align-items-center justify-content-center mb-5 text-decoration-none">
+            <div class="icon p-2 me-1">
+                <img class="img-fluid" src="~/images/logo.png" alt="Icon" style="width: 500px; height: 250px;">
+            </div>
+        </a>
+
+        <input type="hidden" asp-for="UrlRetorno">
+
+        <div asp-validation-summary="All" class="text-danger" hidden></div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control">
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Senha" class="form-label"></label>
+            <input asp-for="Senha" class="form-control">
+            <span asp-validation-for="Senha" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input asp-for="Lembrar" type="checkbox" class="form-check-input">
+            <label class="form-check-label" asp-for="Lembrar"></label>
+        </div>
+
+        <button type="submit" class="w-100 btn btn-success">Entrar</button>
+
+        <a asp-action="Forget" class="d-block text-center mt-3 forgetPassword">Esqueceu sua Senha?</a>
+
+        <div class="separator">
+            <div class="line"></div>
+            <h6>Novo por Aqui?</h6>
+            <div class="line"></div>
+        </div>
+
+        <a asp-action="Register" class="w-100 btn btn-info mt-1">Criar Conta</a>
+    </form>
+</main>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"></partial>
+    <script>
+        let mensagemErro = '';
+        $('.validation-summary-errors ul li').each(function () {
+            mensagemErro += $(this).text() + '<br>';
+        });
+        if (mensagemErro != '') {
+            Swal.fire(
+                'Acesso Negado',
+                mensagemErro,
+                'error'
+            );
+        }
+    </script>
+}
