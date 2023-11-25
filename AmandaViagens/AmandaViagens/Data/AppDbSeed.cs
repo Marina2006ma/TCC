@@ -12,22 +12,22 @@ public class AppDbSeed
         List<Cruzeiro> cruzeiros = new() {
             new() {
                 Id = 1,
-                Nome = "",
+                Nome = "Msc Preziosa",
                 Descricao = "América do Sul<br>7 Noites<br>Saindo de: Santos (São Paulo) <br>Porto de desembarque: Santos (São Paulo)",
-                Preco = 4646.25M,
+                Preco = 4590.00M,
                 Image = @"images/cruzerios/offer_1.jpg"
             },
             new() {
                 Id = 2,
-                Nome = "",
+                Nome = "Costa Fascinosa",
                 Descricao = "América do Sul<br>9 Dias<br>Saindo de: Rio de Janeiro (Rio de Janeiro)<br>Porto de desembarque: Rio de Janeiro (Rio de Janeiro)",
-                Preco = 3463.00M,
+                Preco = 4646.25M,
                 Image = @"images/cruzerios/offer_2.jpg"
             },
 
              new() {
                 Id = 3,
-                Nome = "",
+                Nome = "Norwegian Spirit",
                 Descricao = "Pacífico Sul: Kauai & Moorea<br>12 Dias<br>Saindo de: Honolulu, Oahu<br>Porto de desembarque: Papeete, Taiti, Polinésia Francesa",
                 Preco = 3463.00M,
                 Image = @"images/cruzerios/offer_3.jpg"
@@ -35,7 +35,7 @@ public class AppDbSeed
 
              new() {
                 Id = 4,
-                Nome = "",
+                Nome = "Rhapsody of the Seas",
                 Descricao = "Bahamas & Perfect Day Cruise<br>3 Noites<br>Saindo de: Fort Lauderdale, Flórida<br>Porto de desembarque: Fort Lauderdale, Flórida",
                 Preco = 941.00M,
                 Image = @"images/cruzerios/offer_4.jpg"
@@ -103,14 +103,14 @@ public class AppDbSeed
                 Nome = "Punta Cana",
                 Descricao = "República Dominicana<br>A tropical Punta Cana se orgulha de ser um dos melhores destinos do Caribe, e sua fama é, de fato, justificada.",
                 Icone = @"images/island_t.png",
-                Image = @"images/pontos/praia.jpg"
+                Image = @"images/pontos/praia.jpeg"
             },
             new() {
                 Id = 4,
                 Nome = "Gramado",
                 Descricao = "Rio Grande do Sul<br>Romântica, charmosa, cheia de cultura, belas paisagens, atrações e ótima culinária.",
                 Icone = @"images/backpack.png",
-                Image = @"images/pontos/sul.jpg"
+                Image = @"images/pontos/sul.jpeg"
             },
 
         };
@@ -165,7 +165,7 @@ public class AppDbSeed
             new Usuario(){
                 UsuarioId = users[0].Id,
                 Nome = "Marina Porfirio",
-                Foto = "/img/users/avatar.png"
+                Foto = "/images/avatar.png"
             }
         };
         builder.Entity<Usuario>().HasData(usuarios);

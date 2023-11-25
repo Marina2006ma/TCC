@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AmandaViagens.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231110150421_criando-banco")]
+    [Migration("20231125124505_criando-banco")]
     partial class criandobanco
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,23 +53,23 @@ namespace AmandaViagens.Migrations
                             Id = 1,
                             Descricao = "América do Sul<br>7 Noites<br>Saindo de: Santos (São Paulo) <br>Porto de desembarque: Santos (São Paulo)",
                             Image = "images/cruzerios/offer_1.jpg",
-                            Nome = "",
-                            Preco = 4646.25m
+                            Nome = "Msc Preziosa",
+                            Preco = 4590.00m
                         },
                         new
                         {
                             Id = 2,
                             Descricao = "América do Sul<br>9 Dias<br>Saindo de: Rio de Janeiro (Rio de Janeiro)<br>Porto de desembarque: Rio de Janeiro (Rio de Janeiro)",
                             Image = "images/cruzerios/offer_2.jpg",
-                            Nome = "",
-                            Preco = 3463.00m
+                            Nome = "Costa Fascinosa",
+                            Preco = 4646.25m
                         },
                         new
                         {
                             Id = 3,
                             Descricao = "Pacífico Sul: Kauai & Moorea<br>12 Dias<br>Saindo de: Honolulu, Oahu<br>Porto de desembarque: Papeete, Taiti, Polinésia Francesa",
                             Image = "images/cruzerios/offer_3.jpg",
-                            Nome = "",
+                            Nome = "Norwegian Spirit",
                             Preco = 3463.00m
                         },
                         new
@@ -77,7 +77,7 @@ namespace AmandaViagens.Migrations
                             Id = 4,
                             Descricao = "Bahamas & Perfect Day Cruise<br>3 Noites<br>Saindo de: Fort Lauderdale, Flórida<br>Porto de desembarque: Fort Lauderdale, Flórida",
                             Image = "images/cruzerios/offer_4.jpg",
-                            Nome = "",
+                            Nome = "Rhapsody of the Seas",
                             Preco = 941.00m
                         });
                 });
@@ -226,8 +226,8 @@ namespace AmandaViagens.Migrations
                     b.HasData(
                         new
                         {
-                            UsuarioId = "5c50c1ef-b242-4973-b276-eaf93b4e798a",
-                            Foto = "/img/users/avatar.png",
+                            UsuarioId = "c57b09f3-6f13-428b-a2e3-b95532b3096f",
+                            Foto = "/images/avatar.png",
                             Nome = "Marina Porfirio"
                         });
                 });
@@ -260,22 +260,22 @@ namespace AmandaViagens.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "2387f71c-9988-4fc1-bfcf-df88d1531a6a",
-                            ConcurrencyStamp = "66c68302-7c74-4df4-b44c-86046a8eb3a0",
+                            Id = "89fb2e4e-1a8b-460b-b418-9ddccf223f85",
+                            ConcurrencyStamp = "0e44ad40-6faf-4690-aae6-81ff9df9adc1",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "fc3e3b06-b9b4-49c7-977d-5f81c48b4b00",
-                            ConcurrencyStamp = "1b1fbde8-8056-40f3-8162-23a4a8c2cc8c",
+                            Id = "629fa3ca-efb3-409b-9080-b02975ca0078",
+                            ConcurrencyStamp = "a88225b9-581c-4628-b696-7e7b55325171",
                             Name = "Funcionário",
                             NormalizedName = "FUNCIONARIO"
                         },
                         new
                         {
-                            Id = "b1d11fff-ca32-4358-b5ed-5966dbb9a7b0",
-                            ConcurrencyStamp = "afc955a3-4ebd-4f83-ada0-56186df99faa",
+                            Id = "7a550ef5-6f87-46af-b148-2b4a8b0acab7",
+                            ConcurrencyStamp = "e99a8fd8-2c0f-41a0-aa76-22126d36fa02",
                             Name = "Cliente",
                             NormalizedName = "CLIENTE"
                         });
@@ -370,17 +370,17 @@ namespace AmandaViagens.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "5c50c1ef-b242-4973-b276-eaf93b4e798a",
+                            Id = "c57b09f3-6f13-428b-a2e3-b95532b3096f",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3318b928-6470-4305-bbd9-4a00f0bab875",
+                            ConcurrencyStamp = "12edad5e-64bb-4492-89b8-007c4a243fa7",
                             Email = "admin@viagens.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@VIAGENS.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEKzc9O/DZ9oM4MoD0a/yviJdeb2Cng02/gaJvm1asXBsDNAyLlOqcGgoT3R8tlan4A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDW1X+s1sHDVP5j020wpWQMqo9f9sRekDYkd2OfcdBD0gISMNV5LcRH1d696KL1egg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6a08ecb1-5473-43de-9d4a-fec0924afaa0",
+                            SecurityStamp = "900171e7-708b-4250-867c-116d431b1c9e",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
@@ -448,18 +448,18 @@ namespace AmandaViagens.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "5c50c1ef-b242-4973-b276-eaf93b4e798a",
-                            RoleId = "2387f71c-9988-4fc1-bfcf-df88d1531a6a"
+                            UserId = "c57b09f3-6f13-428b-a2e3-b95532b3096f",
+                            RoleId = "89fb2e4e-1a8b-460b-b418-9ddccf223f85"
                         },
                         new
                         {
-                            UserId = "5c50c1ef-b242-4973-b276-eaf93b4e798a",
-                            RoleId = "fc3e3b06-b9b4-49c7-977d-5f81c48b4b00"
+                            UserId = "c57b09f3-6f13-428b-a2e3-b95532b3096f",
+                            RoleId = "629fa3ca-efb3-409b-9080-b02975ca0078"
                         },
                         new
                         {
-                            UserId = "5c50c1ef-b242-4973-b276-eaf93b4e798a",
-                            RoleId = "b1d11fff-ca32-4358-b5ed-5966dbb9a7b0"
+                            UserId = "c57b09f3-6f13-428b-a2e3-b95532b3096f",
+                            RoleId = "7a550ef5-6f87-46af-b148-2b4a8b0acab7"
                         });
                 });
 

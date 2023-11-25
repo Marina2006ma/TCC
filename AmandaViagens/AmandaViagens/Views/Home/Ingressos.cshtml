@@ -1,134 +1,56 @@
+@model List<AmandaViagens.Models.Ingresso>
 @{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 
 @section Styles {
-    <link rel="stylesheet" type="text/css" href="~/styles/ingressos_styles.css">
-    <link rel="stylesheet" type="text/css" href="~/styles/ingressos_responsive.css">
+	<link rel="stylesheet" type="text/css" href="~/styles/ingressos_styles.css">
+	<link rel="stylesheet" type="text/css" href="~/styles/ingressos_responsive.css">
 }
-	<!-- Home -->
+<!-- Home -->
 
-	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="../images/ingressos/ingressos.jpg"></div>
-		<div class="home_content">
-			<div class="home_title">Ingressos</div>
-			<div class="home_title"></div>
-		</div>
+<div class="home">
+	<div class="home_background parallax-window" data-parallax="scroll"
+		data-image-src="../images/ingressos/ingressos.jpg"></div>
+	<div class="home_content">
+		<div class="home_title">Ingressos</div>
+		<div class="home_title"></div>
 	</div>
+</div>
 
-					
 
-				<div class="col-lg-12">
-					<!-- Offers Grid -->
 
-					<div class="offers_grid">
+<div class="col-lg-12">
+	<!-- Offers Grid -->
 
-						<!-- Offers Item -->
+	<div class="offers_grid mb-5">
 
-						<div class="offers_item rating_4">
-							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@@kensuarez -->
-										<div class="offers_image_background" style="background-image:url(../images/ingressos/castelo.jpg)"></div>
-										<div class="offer_name"><a href="single_listing.html">Walt Disney World</a></div>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="offers_content">
-										<div class="offers_price">R$ 548,76<span>por ingresso</span></div>
-										<p class="offers_text">INGRESSOS PARA OS PARQUES TEMÁTICOS WALT DISNEY WORLD</p>
-										<p class="offers_text">1 Dia (10 anos ou mais)</p>
-										<div class="button book_button"><a href="#">Detalhes<span></span><span></span><span></span></a></div>
-									
-									</div>
-								</div>
-							</div>
+		<!-- Offers Item -->
+		@foreach (var ingresso in Model)
+		{
+			<div class="offers_item">
+				<div class="row" style="height: 250px;">
+					<div class="col-lg-1 temp_col"></div>
+					<div class="col-lg-3 col-1680-4">
+						<div class="offers_image_container">
+							<div class="offers_image_background"
+								style="background-image:url('@Url.Content("../" + ingresso.Image)')"></div>
+							<div class="offer_name"><a href="#">@ingresso.Nome</a></div>
 						</div>
-
-						<!-- Offers Item -->
-
-						<div class="offers_item rating_3">
-							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@@thoughtcatalog -->
-										<div class="offers_image_background" style="background-image:url(../images/ingressos/beto.jpg)"></div>
-										<div class="offer_name"><a href="single_listing.html">Beto Carrero World</a></div>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="offers_content">
-										<div class="offers_price">R$ 139,90<span>por ingresso</span></div>
-										<p class="offers_text">PASSAPORTE DE ACESSO 1º LOTE</p>
-										<p class="offers_text">1 Dia (A partir de 05 anos)</p>
-										<div class="button book_button"><a href="#">Detalhes<span></span><span></span><span></span></a></div>
-									</div>
-								</div>
-							</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="offers_content">
+							<div class="offers_price my-2">R$ @ingresso.Preco<span>por ingresso</span></div>
+							<p class="offers_text mb-2">@Html.Raw(ingresso.Descricao)</p>
 						</div>
-
-						<!-- Offers Item -->
-
-						<div class="offers_item rating_5 mb-5">
-							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@@mindaugas -->
-										<div class="offers_image_background" style="background-image:url(../images/ingressos/thermas.jpg)"></div>
-										<div class="offer_name"><a href="single_listing.html">Thermas dos Laranjais</a></div>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="offers_content">
-										<div class="offers_price">R$ 150,00<span>por ingresso</span></div>
-										<p class="offers_text">INGRESSO DIÁRIO INTEIRA OUTUBRO E NOVEMBRO 2023</p>
-										<p class="offers_text">1 Dia</p>
-										<div class="button book_button"><a href="#">Detalhes<span></span><span></span><span></span></a></div>
-										<div class="offer_reviews">
-											
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Offers Item -->
-
-						<div class="offers_item rating_4 mb-5">
-							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@@rktkn -->
-										<div class="offers_image_background" style="background-image:url(../images/ingressos/hopihari.jpg)"></div>
-										<div class="offer_name"><a href="single_listing.html">Hopi Hari</a></div>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="offers_content">
-										<div class="offers_price">R$ 159,90<span>por ingresso</span></div>
-										<p class="offers_text">HORA DO HORROR</p>
-										<p class="offers_text">1 Dia</p>
-										<div class="button book_button"><a href="#">Detalhes<span></span><span></span><span></span></a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Offers Item -->
-
-						
-
 					</div>
 				</div>
-
 			</div>
-		</div>		
+		}
+
 	</div>
+</div>
+
 
 @section Scripts {
 	<script src="~/js/jquery-3.2.1.min.js"></script>

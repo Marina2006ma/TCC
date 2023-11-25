@@ -283,25 +283,25 @@ namespace AmandaViagens.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "2387f71c-9988-4fc1-bfcf-df88d1531a6a", "66c68302-7c74-4df4-b44c-86046a8eb3a0", "Administrador", "ADMINISTRADOR" },
-                    { "b1d11fff-ca32-4358-b5ed-5966dbb9a7b0", "afc955a3-4ebd-4f83-ada0-56186df99faa", "Cliente", "CLIENTE" },
-                    { "fc3e3b06-b9b4-49c7-977d-5f81c48b4b00", "1b1fbde8-8056-40f3-8162-23a4a8c2cc8c", "Funcionário", "FUNCIONARIO" }
+                    { "629fa3ca-efb3-409b-9080-b02975ca0078", "a88225b9-581c-4628-b696-7e7b55325171", "Funcionário", "FUNCIONARIO" },
+                    { "7a550ef5-6f87-46af-b148-2b4a8b0acab7", "e99a8fd8-2c0f-41a0-aa76-22126d36fa02", "Cliente", "CLIENTE" },
+                    { "89fb2e4e-1a8b-460b-b418-9ddccf223f85", "0e44ad40-6faf-4690-aae6-81ff9df9adc1", "Administrador", "ADMINISTRADOR" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "5c50c1ef-b242-4973-b276-eaf93b4e798a", 0, "3318b928-6470-4305-bbd9-4a00f0bab875", "admin@viagens.com", true, false, null, "ADMIN@VIAGENS.COM", "ADMIN", "AQAAAAEAACcQAAAAEKzc9O/DZ9oM4MoD0a/yviJdeb2Cng02/gaJvm1asXBsDNAyLlOqcGgoT3R8tlan4A==", null, false, "6a08ecb1-5473-43de-9d4a-fec0924afaa0", false, "Admin" });
+                values: new object[] { "c57b09f3-6f13-428b-a2e3-b95532b3096f", 0, "12edad5e-64bb-4492-89b8-007c4a243fa7", "admin@viagens.com", true, false, null, "ADMIN@VIAGENS.COM", "ADMIN", "AQAAAAEAACcQAAAAEDW1X+s1sHDVP5j020wpWQMqo9f9sRekDYkd2OfcdBD0gISMNV5LcRH1d696KL1egg==", null, false, "900171e7-708b-4250-867c-116d431b1c9e", false, "Admin" });
 
             migrationBuilder.InsertData(
                 table: "Cruzeiro",
                 columns: new[] { "Id", "Descricao", "Image", "Nome", "Preco" },
                 values: new object[,]
                 {
-                    { 1, "América do Sul<br>7 Noites<br>Saindo de: Santos (São Paulo) <br>Porto de desembarque: Santos (São Paulo)", "images/cruzerios/offer_1.jpg", "", 4646.25m },
-                    { 2, "América do Sul<br>9 Dias<br>Saindo de: Rio de Janeiro (Rio de Janeiro)<br>Porto de desembarque: Rio de Janeiro (Rio de Janeiro)", "images/cruzerios/offer_2.jpg", "", 3463.00m },
-                    { 3, "Pacífico Sul: Kauai & Moorea<br>12 Dias<br>Saindo de: Honolulu, Oahu<br>Porto de desembarque: Papeete, Taiti, Polinésia Francesa", "images/cruzerios/offer_3.jpg", "", 3463.00m },
-                    { 4, "Bahamas & Perfect Day Cruise<br>3 Noites<br>Saindo de: Fort Lauderdale, Flórida<br>Porto de desembarque: Fort Lauderdale, Flórida", "images/cruzerios/offer_4.jpg", "", 941.00m }
+                    { 1, "América do Sul<br>7 Noites<br>Saindo de: Santos (São Paulo) <br>Porto de desembarque: Santos (São Paulo)", "images/cruzerios/offer_1.jpg", "Msc Preziosa", 4590.00m },
+                    { 2, "América do Sul<br>9 Dias<br>Saindo de: Rio de Janeiro (Rio de Janeiro)<br>Porto de desembarque: Rio de Janeiro (Rio de Janeiro)", "images/cruzerios/offer_2.jpg", "Costa Fascinosa", 4646.25m },
+                    { 3, "Pacífico Sul: Kauai & Moorea<br>12 Dias<br>Saindo de: Honolulu, Oahu<br>Porto de desembarque: Papeete, Taiti, Polinésia Francesa", "images/cruzerios/offer_3.jpg", "Norwegian Spirit", 3463.00m },
+                    { 4, "Bahamas & Perfect Day Cruise<br>3 Noites<br>Saindo de: Fort Lauderdale, Flórida<br>Porto de desembarque: Fort Lauderdale, Flórida", "images/cruzerios/offer_4.jpg", "Rhapsody of the Seas", 941.00m }
                 });
 
             migrationBuilder.InsertData(
@@ -331,15 +331,15 @@ namespace AmandaViagens.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "2387f71c-9988-4fc1-bfcf-df88d1531a6a", "5c50c1ef-b242-4973-b276-eaf93b4e798a" },
-                    { "b1d11fff-ca32-4358-b5ed-5966dbb9a7b0", "5c50c1ef-b242-4973-b276-eaf93b4e798a" },
-                    { "fc3e3b06-b9b4-49c7-977d-5f81c48b4b00", "5c50c1ef-b242-4973-b276-eaf93b4e798a" }
+                    { "629fa3ca-efb3-409b-9080-b02975ca0078", "c57b09f3-6f13-428b-a2e3-b95532b3096f" },
+                    { "7a550ef5-6f87-46af-b148-2b4a8b0acab7", "c57b09f3-6f13-428b-a2e3-b95532b3096f" },
+                    { "89fb2e4e-1a8b-460b-b418-9ddccf223f85", "c57b09f3-6f13-428b-a2e3-b95532b3096f" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Usuario",
                 columns: new[] { "UsuarioId", "Foto", "Nome" },
-                values: new object[] { "5c50c1ef-b242-4973-b276-eaf93b4e798a", "/img/users/avatar.png", "Marina Porfirio" });
+                values: new object[] { "c57b09f3-6f13-428b-a2e3-b95532b3096f", "/images/avatar.png", "Marina Porfirio" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
