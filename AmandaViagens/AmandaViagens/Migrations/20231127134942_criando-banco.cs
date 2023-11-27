@@ -283,25 +283,25 @@ namespace AmandaViagens.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "629fa3ca-efb3-409b-9080-b02975ca0078", "a88225b9-581c-4628-b696-7e7b55325171", "Funcionário", "FUNCIONARIO" },
-                    { "7a550ef5-6f87-46af-b148-2b4a8b0acab7", "e99a8fd8-2c0f-41a0-aa76-22126d36fa02", "Cliente", "CLIENTE" },
-                    { "89fb2e4e-1a8b-460b-b418-9ddccf223f85", "0e44ad40-6faf-4690-aae6-81ff9df9adc1", "Administrador", "ADMINISTRADOR" }
+                    { "1d5e6056-50e7-4c92-b317-c69c7530173b", "b907b209-95f5-4266-a239-f6a45fb0d0db", "Administrador", "ADMINISTRADOR" },
+                    { "76ab57bc-915f-4c26-af27-04fabf0a4ce2", "f0b9b730-6c34-4611-9992-1550422e0df0", "Funcionário", "FUNCIONARIO" },
+                    { "ea82e20c-5f9e-4d5a-9a5b-d52385b0797f", "35d3df32-05bf-4a82-a718-be6aacc56148", "Cliente", "CLIENTE" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "c57b09f3-6f13-428b-a2e3-b95532b3096f", 0, "12edad5e-64bb-4492-89b8-007c4a243fa7", "admin@viagens.com", true, false, null, "ADMIN@VIAGENS.COM", "ADMIN", "AQAAAAEAACcQAAAAEDW1X+s1sHDVP5j020wpWQMqo9f9sRekDYkd2OfcdBD0gISMNV5LcRH1d696KL1egg==", null, false, "900171e7-708b-4250-867c-116d431b1c9e", false, "Admin" });
+                values: new object[] { "d3f71486-1d92-49c4-b91b-11ec39e4415f", 0, "64171c31-5143-45a8-a231-222bf89834b3", "admin@viagens.com", true, false, null, "ADMIN@VIAGENS.COM", "ADMIN", "AQAAAAEAACcQAAAAEFzE2UeEu/zy+7GEivLXrd6ggrg6/R06tV1qqmnGrraeM4LYD0txf8EVCHHPmHVTuQ==", null, false, "b24b65b3-b0ea-4bf3-a480-c9689ae9f3d1", false, "Admin" });
 
             migrationBuilder.InsertData(
                 table: "Cruzeiro",
                 columns: new[] { "Id", "Descricao", "Image", "Nome", "Preco" },
                 values: new object[,]
                 {
-                    { 1, "América do Sul<br>7 Noites<br>Saindo de: Santos (São Paulo) <br>Porto de desembarque: Santos (São Paulo)", "images/cruzerios/offer_1.jpg", "Msc Preziosa", 4590.00m },
-                    { 2, "América do Sul<br>9 Dias<br>Saindo de: Rio de Janeiro (Rio de Janeiro)<br>Porto de desembarque: Rio de Janeiro (Rio de Janeiro)", "images/cruzerios/offer_2.jpg", "Costa Fascinosa", 4646.25m },
-                    { 3, "Pacífico Sul: Kauai & Moorea<br>12 Dias<br>Saindo de: Honolulu, Oahu<br>Porto de desembarque: Papeete, Taiti, Polinésia Francesa", "images/cruzerios/offer_3.jpg", "Norwegian Spirit", 3463.00m },
-                    { 4, "Bahamas & Perfect Day Cruise<br>3 Noites<br>Saindo de: Fort Lauderdale, Flórida<br>Porto de desembarque: Fort Lauderdale, Flórida", "images/cruzerios/offer_4.jpg", "Rhapsody of the Seas", 941.00m }
+                    { 1, "América do Sul<br>7 Noites<br>Saindo de: Santos (São Paulo) <br>Porto de desembarque: Santos (São Paulo)", "images/cruzeiros/offer_1.jpg", "Msc Preziosa", 4590.00m },
+                    { 2, "América do Sul<br>9 Dias<br>Saindo de: Rio de Janeiro (Rio de Janeiro)<br>Porto de desembarque: Rio de Janeiro (Rio de Janeiro)", "images/cruzeiros/offer_2.jpg", "Costa Fascinosa", 4646.25m },
+                    { 3, "Pacífico Sul: Kauai & Moorea<br>12 Dias<br>Saindo de: Honolulu, Oahu<br>Porto de desembarque: Papeete, Taiti, Polinésia Francesa", "images/cruzeiros/offer_3.jpg", "Norwegian Spirit", 3463.00m },
+                    { 4, "Bahamas & Perfect Day Cruise<br>3 Noites<br>Saindo de: Fort Lauderdale, Flórida<br>Porto de desembarque: Fort Lauderdale, Flórida", "images/cruzeiros/offer_4.jpg", "Rhapsody of the Seas", 941.00m }
                 });
 
             migrationBuilder.InsertData(
@@ -322,8 +322,8 @@ namespace AmandaViagens.Migrations
                 {
                     { 1, "Rio de Janeiro<br>De braços abertos sobre a Guanabara, o Cristo Redentor recebe os visitantes e abençoa os cariocas.", "images/backpack.png", "images/pontos/cristo.jpg", "Cristo Redentor" },
                     { 2, "Paris<br>Esta joia da paisagem parisiense e símbolo máximo da França fica ainda mais espetacular quando vista de perto.", "images/backpack.png", "images/pontos/torre.jpg", "Torre Eiffel" },
-                    { 3, "República Dominicana<br>A tropical Punta Cana se orgulha de ser um dos melhores destinos do Caribe, e sua fama é, de fato, justificada.", "images/island_t.png", "images/pontos/praia.jpg", "Punta Cana" },
-                    { 4, "Rio Grande do Sul<br>Romântica, charmosa, cheia de cultura, belas paisagens, atrações e ótima culinária.", "images/backpack.png", "images/pontos/sul.jpg", "Gramado" }
+                    { 3, "República Dominicana<br>A tropical Punta Cana se orgulha de ser um dos melhores destinos do Caribe, e sua fama é, de fato, justificada.", "images/island_t.png", "images/pontos/praia.jpeg", "Punta Cana" },
+                    { 4, "Rio Grande do Sul<br>Romântica, charmosa, cheia de cultura, belas paisagens, atrações e ótima culinária.", "images/backpack.png", "images/pontos/sul.jpeg", "Gramado" }
                 });
 
             migrationBuilder.InsertData(
@@ -331,15 +331,15 @@ namespace AmandaViagens.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "629fa3ca-efb3-409b-9080-b02975ca0078", "c57b09f3-6f13-428b-a2e3-b95532b3096f" },
-                    { "7a550ef5-6f87-46af-b148-2b4a8b0acab7", "c57b09f3-6f13-428b-a2e3-b95532b3096f" },
-                    { "89fb2e4e-1a8b-460b-b418-9ddccf223f85", "c57b09f3-6f13-428b-a2e3-b95532b3096f" }
+                    { "1d5e6056-50e7-4c92-b317-c69c7530173b", "d3f71486-1d92-49c4-b91b-11ec39e4415f" },
+                    { "76ab57bc-915f-4c26-af27-04fabf0a4ce2", "d3f71486-1d92-49c4-b91b-11ec39e4415f" },
+                    { "ea82e20c-5f9e-4d5a-9a5b-d52385b0797f", "d3f71486-1d92-49c4-b91b-11ec39e4415f" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Usuario",
                 columns: new[] { "UsuarioId", "Foto", "Nome" },
-                values: new object[] { "c57b09f3-6f13-428b-a2e3-b95532b3096f", "/images/avatar.png", "Marina Porfirio" });
+                values: new object[] { "d3f71486-1d92-49c4-b91b-11ec39e4415f", "/images/avatar.png", "Marina Porfirio" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

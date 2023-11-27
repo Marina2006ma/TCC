@@ -15,14 +15,14 @@ public class AppDbSeed
                 Nome = "Msc Preziosa",
                 Descricao = "América do Sul<br>7 Noites<br>Saindo de: Santos (São Paulo) <br>Porto de desembarque: Santos (São Paulo)",
                 Preco = 4590.00M,
-                Image = @"images/cruzerios/offer_1.jpg"
+                Image = @"images/cruzeiros/offer_1.jpg"
             },
             new() {
                 Id = 2,
                 Nome = "Costa Fascinosa",
                 Descricao = "América do Sul<br>9 Dias<br>Saindo de: Rio de Janeiro (Rio de Janeiro)<br>Porto de desembarque: Rio de Janeiro (Rio de Janeiro)",
                 Preco = 4646.25M,
-                Image = @"images/cruzerios/offer_2.jpg"
+                Image = @"images/cruzeiros/offer_2.jpg"
             },
 
              new() {
@@ -30,7 +30,7 @@ public class AppDbSeed
                 Nome = "Norwegian Spirit",
                 Descricao = "Pacífico Sul: Kauai & Moorea<br>12 Dias<br>Saindo de: Honolulu, Oahu<br>Porto de desembarque: Papeete, Taiti, Polinésia Francesa",
                 Preco = 3463.00M,
-                Image = @"images/cruzerios/offer_3.jpg"
+                Image = @"images/cruzeiros/offer_3.jpg"
             },
 
              new() {
@@ -38,7 +38,7 @@ public class AppDbSeed
                 Nome = "Rhapsody of the Seas",
                 Descricao = "Bahamas & Perfect Day Cruise<br>3 Noites<br>Saindo de: Fort Lauderdale, Flórida<br>Porto de desembarque: Fort Lauderdale, Flórida",
                 Preco = 941.00M,
-                Image = @"images/cruzerios/offer_4.jpg"
+                Image = @"images/cruzeiros/offer_4.jpg"
             }
         };
         builder.Entity<Cruzeiro>().HasData(cruzeiros);

@@ -50,7 +50,7 @@ namespace AmandaViagens.Migrations
                         {
                             Id = 1,
                             Descricao = "América do Sul<br>7 Noites<br>Saindo de: Santos (São Paulo) <br>Porto de desembarque: Santos (São Paulo)",
-                            Image = "images/cruzerios/offer_1.jpg",
+                            Image = "images/cruzeiros/offer_1.jpg",
                             Nome = "Msc Preziosa",
                             Preco = 4590.00m
                         },
@@ -58,7 +58,7 @@ namespace AmandaViagens.Migrations
                         {
                             Id = 2,
                             Descricao = "América do Sul<br>9 Dias<br>Saindo de: Rio de Janeiro (Rio de Janeiro)<br>Porto de desembarque: Rio de Janeiro (Rio de Janeiro)",
-                            Image = "images/cruzerios/offer_2.jpg",
+                            Image = "images/cruzeiros/offer_2.jpg",
                             Nome = "Costa Fascinosa",
                             Preco = 4646.25m
                         },
@@ -66,7 +66,7 @@ namespace AmandaViagens.Migrations
                         {
                             Id = 3,
                             Descricao = "Pacífico Sul: Kauai & Moorea<br>12 Dias<br>Saindo de: Honolulu, Oahu<br>Porto de desembarque: Papeete, Taiti, Polinésia Francesa",
-                            Image = "images/cruzerios/offer_3.jpg",
+                            Image = "images/cruzeiros/offer_3.jpg",
                             Nome = "Norwegian Spirit",
                             Preco = 3463.00m
                         },
@@ -74,7 +74,7 @@ namespace AmandaViagens.Migrations
                         {
                             Id = 4,
                             Descricao = "Bahamas & Perfect Day Cruise<br>3 Noites<br>Saindo de: Fort Lauderdale, Flórida<br>Porto de desembarque: Fort Lauderdale, Flórida",
-                            Image = "images/cruzerios/offer_4.jpg",
+                            Image = "images/cruzeiros/offer_4.jpg",
                             Nome = "Rhapsody of the Seas",
                             Preco = 941.00m
                         });
@@ -190,7 +190,7 @@ namespace AmandaViagens.Migrations
                             Id = 3,
                             Descricao = "República Dominicana<br>A tropical Punta Cana se orgulha de ser um dos melhores destinos do Caribe, e sua fama é, de fato, justificada.",
                             Icone = "images/island_t.png",
-                            Image = "images/pontos/praia.jpg",
+                            Image = "images/pontos/praia.jpeg",
                             Nome = "Punta Cana"
                         },
                         new
@@ -198,7 +198,7 @@ namespace AmandaViagens.Migrations
                             Id = 4,
                             Descricao = "Rio Grande do Sul<br>Romântica, charmosa, cheia de cultura, belas paisagens, atrações e ótima culinária.",
                             Icone = "images/backpack.png",
-                            Image = "images/pontos/sul.jpg",
+                            Image = "images/pontos/sul.jpeg",
                             Nome = "Gramado"
                         });
                 });
@@ -224,7 +224,7 @@ namespace AmandaViagens.Migrations
                     b.HasData(
                         new
                         {
-                            UsuarioId = "c57b09f3-6f13-428b-a2e3-b95532b3096f",
+                            UsuarioId = "d3f71486-1d92-49c4-b91b-11ec39e4415f",
                             Foto = "/images/avatar.png",
                             Nome = "Marina Porfirio"
                         });
@@ -258,22 +258,22 @@ namespace AmandaViagens.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "89fb2e4e-1a8b-460b-b418-9ddccf223f85",
-                            ConcurrencyStamp = "0e44ad40-6faf-4690-aae6-81ff9df9adc1",
+                            Id = "1d5e6056-50e7-4c92-b317-c69c7530173b",
+                            ConcurrencyStamp = "b907b209-95f5-4266-a239-f6a45fb0d0db",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "629fa3ca-efb3-409b-9080-b02975ca0078",
-                            ConcurrencyStamp = "a88225b9-581c-4628-b696-7e7b55325171",
+                            Id = "76ab57bc-915f-4c26-af27-04fabf0a4ce2",
+                            ConcurrencyStamp = "f0b9b730-6c34-4611-9992-1550422e0df0",
                             Name = "Funcionário",
                             NormalizedName = "FUNCIONARIO"
                         },
                         new
                         {
-                            Id = "7a550ef5-6f87-46af-b148-2b4a8b0acab7",
-                            ConcurrencyStamp = "e99a8fd8-2c0f-41a0-aa76-22126d36fa02",
+                            Id = "ea82e20c-5f9e-4d5a-9a5b-d52385b0797f",
+                            ConcurrencyStamp = "35d3df32-05bf-4a82-a718-be6aacc56148",
                             Name = "Cliente",
                             NormalizedName = "CLIENTE"
                         });
@@ -368,17 +368,17 @@ namespace AmandaViagens.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "c57b09f3-6f13-428b-a2e3-b95532b3096f",
+                            Id = "d3f71486-1d92-49c4-b91b-11ec39e4415f",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "12edad5e-64bb-4492-89b8-007c4a243fa7",
+                            ConcurrencyStamp = "64171c31-5143-45a8-a231-222bf89834b3",
                             Email = "admin@viagens.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@VIAGENS.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEDW1X+s1sHDVP5j020wpWQMqo9f9sRekDYkd2OfcdBD0gISMNV5LcRH1d696KL1egg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFzE2UeEu/zy+7GEivLXrd6ggrg6/R06tV1qqmnGrraeM4LYD0txf8EVCHHPmHVTuQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "900171e7-708b-4250-867c-116d431b1c9e",
+                            SecurityStamp = "b24b65b3-b0ea-4bf3-a480-c9689ae9f3d1",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
@@ -446,18 +446,18 @@ namespace AmandaViagens.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "c57b09f3-6f13-428b-a2e3-b95532b3096f",
-                            RoleId = "89fb2e4e-1a8b-460b-b418-9ddccf223f85"
+                            UserId = "d3f71486-1d92-49c4-b91b-11ec39e4415f",
+                            RoleId = "1d5e6056-50e7-4c92-b317-c69c7530173b"
                         },
                         new
                         {
-                            UserId = "c57b09f3-6f13-428b-a2e3-b95532b3096f",
-                            RoleId = "629fa3ca-efb3-409b-9080-b02975ca0078"
+                            UserId = "d3f71486-1d92-49c4-b91b-11ec39e4415f",
+                            RoleId = "76ab57bc-915f-4c26-af27-04fabf0a4ce2"
                         },
                         new
                         {
-                            UserId = "c57b09f3-6f13-428b-a2e3-b95532b3096f",
-                            RoleId = "7a550ef5-6f87-46af-b148-2b4a8b0acab7"
+                            UserId = "d3f71486-1d92-49c4-b91b-11ec39e4415f",
+                            RoleId = "ea82e20c-5f9e-4d5a-9a5b-d52385b0797f"
                         });
                 });
 
