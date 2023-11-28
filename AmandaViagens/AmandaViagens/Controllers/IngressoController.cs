@@ -74,7 +74,7 @@ namespace AmandaViagens.Controllers
                     {
                         formFile.CopyTo(stream);
                     }
-                    ingresso.Image = @"images/ingressos/" + fileName;
+                    ingresso.Image = @"/images/ingressos/" + fileName;
                     await _context.SaveChangesAsync();
                 }
                 return RedirectToAction(nameof(Index));
@@ -133,7 +133,7 @@ namespace AmandaViagens.Controllers
                         {
                             formFile.CopyTo(stream);
                         }
-                        ingresso.Image = @"images/ingressos/" + fileName;
+                        ingresso.Image = @"/images/ingressos/" + fileName;
                     }
                     _context.Update(ingresso);
                     await _context.SaveChangesAsync();

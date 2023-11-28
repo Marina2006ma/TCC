@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AmandaViagens.Migrations
 {
-    public partial class criandobanco : Migration
+    public partial class criarbanco : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -283,25 +283,25 @@ namespace AmandaViagens.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "1d5e6056-50e7-4c92-b317-c69c7530173b", "b907b209-95f5-4266-a239-f6a45fb0d0db", "Administrador", "ADMINISTRADOR" },
-                    { "76ab57bc-915f-4c26-af27-04fabf0a4ce2", "f0b9b730-6c34-4611-9992-1550422e0df0", "Funcionário", "FUNCIONARIO" },
-                    { "ea82e20c-5f9e-4d5a-9a5b-d52385b0797f", "35d3df32-05bf-4a82-a718-be6aacc56148", "Cliente", "CLIENTE" }
+                    { "0055bc0c-de41-4dd1-a12d-466d4cd317de", "7dab8ce3-b1d8-49b2-8fb5-d9727fb6fb39", "Cliente", "CLIENTE" },
+                    { "36c76f25-c208-403a-8267-b5e4d0b4b6bc", "44d555cf-a074-45c9-9f0f-e7443473f580", "Funcionário", "FUNCIONARIO" },
+                    { "ded120eb-7b7e-4771-8f50-1fc81cefcabe", "e8959b7d-b64c-45f5-bff6-53dfd490643b", "Administrador", "ADMINISTRADOR" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "d3f71486-1d92-49c4-b91b-11ec39e4415f", 0, "64171c31-5143-45a8-a231-222bf89834b3", "admin@viagens.com", true, false, null, "ADMIN@VIAGENS.COM", "ADMIN", "AQAAAAEAACcQAAAAEFzE2UeEu/zy+7GEivLXrd6ggrg6/R06tV1qqmnGrraeM4LYD0txf8EVCHHPmHVTuQ==", null, false, "b24b65b3-b0ea-4bf3-a480-c9689ae9f3d1", false, "Admin" });
+                values: new object[] { "43df1122-c9d2-4c4e-a38b-72dd9333f64f", 0, "405c452c-b581-41ee-b501-b2bcc0bab50d", "admin@viagens.com", true, false, null, "ADMIN@VIAGENS.COM", "ADMIN", "AQAAAAEAACcQAAAAEMcZvfRWEcE1LXVU+uBtnDqW09pHl9lrFioia9WUEq/dWVKmzdeEwWP6Ktzxeg49Pg==", null, false, "bd7e6137-5d4d-484e-b4a9-eea34c90cb99", false, "Admin" });
 
             migrationBuilder.InsertData(
                 table: "Cruzeiro",
                 columns: new[] { "Id", "Descricao", "Image", "Nome", "Preco" },
                 values: new object[,]
                 {
-                    { 1, "América do Sul<br>7 Noites<br>Saindo de: Santos (São Paulo) <br>Porto de desembarque: Santos (São Paulo)", "images/cruzeiros/offer_1.jpg", "Msc Preziosa", 4590.00m },
-                    { 2, "América do Sul<br>9 Dias<br>Saindo de: Rio de Janeiro (Rio de Janeiro)<br>Porto de desembarque: Rio de Janeiro (Rio de Janeiro)", "images/cruzeiros/offer_2.jpg", "Costa Fascinosa", 4646.25m },
-                    { 3, "Pacífico Sul: Kauai & Moorea<br>12 Dias<br>Saindo de: Honolulu, Oahu<br>Porto de desembarque: Papeete, Taiti, Polinésia Francesa", "images/cruzeiros/offer_3.jpg", "Norwegian Spirit", 3463.00m },
-                    { 4, "Bahamas & Perfect Day Cruise<br>3 Noites<br>Saindo de: Fort Lauderdale, Flórida<br>Porto de desembarque: Fort Lauderdale, Flórida", "images/cruzeiros/offer_4.jpg", "Rhapsody of the Seas", 941.00m }
+                    { 1, "América do Sul<br>7 Noites<br>Saindo de: Santos (São Paulo) <br>Porto de desembarque: Santos (São Paulo)", "/images/cruzeiros/offer_1.jpg", "Msc Preziosa", 4590.00m },
+                    { 2, "América do Sul<br>9 Dias<br>Saindo de: Rio de Janeiro (Rio de Janeiro)<br>Porto de desembarque: Rio de Janeiro (Rio de Janeiro)", "/images/cruzeiros/offer_2.jpg", "Costa Fascinosa", 4646.25m },
+                    { 3, "Pacífico Sul: Kauai & Moorea<br>12 Dias<br>Saindo de: Honolulu, Oahu<br>Porto de desembarque: Papeete, Taiti, Polinésia Francesa", "/images/cruzeiros/offer_3.jpg", "Norwegian Spirit", 3463.00m },
+                    { 4, "Bahamas & Perfect Day Cruise<br>3 Noites<br>Saindo de: Fort Lauderdale, Flórida<br>Porto de desembarque: Fort Lauderdale, Flórida", "/images/cruzeiros/offer_4.jpg", "Rhapsody of the Seas", 941.00m }
                 });
 
             migrationBuilder.InsertData(
@@ -309,10 +309,10 @@ namespace AmandaViagens.Migrations
                 columns: new[] { "Id", "Descricao", "Image", "Nome", "Preco" },
                 values: new object[,]
                 {
-                    { 1, "INGRESSOS PARA OS PARQUES TEMÁTICOS WALT DISNEY WORLD<br>1 Dia (10 anos ou mais)", "images/ingressos/castelo.jpg", "Walt Disney World", 548.76m },
-                    { 2, "PASSAPORTE DE ACESSO 1º LOTE<br>1 Dia (A partir de 05 anos)", "images/ingressos/beto.jpg", "Beto Carrero World", 139.90m },
-                    { 3, "INGRESSO DIÁRIO INTEIRA OUTUBRO E NOVEMBRO 2023<br>1 Dia", "images/ingressos/thermas.jpg", "Thermas dos Laranjais", 150.00m },
-                    { 4, "HORA DO HORROR<br>1 Dia", "images/ingressos/hopihari.jpg", "Hopi Hari", 159.90m }
+                    { 1, "INGRESSOS PARA OS PARQUES TEMÁTICOS WALT DISNEY WORLD<br>1 Dia (10 anos ou mais)", "/images/ingressos/castelo.jpg", "Walt Disney World", 548.76m },
+                    { 2, "PASSAPORTE DE ACESSO 1º LOTE<br>1 Dia (A partir de 05 anos)", "/images/ingressos/beto.jpg", "Beto Carrero World", 139.90m },
+                    { 3, "INGRESSO DIÁRIO INTEIRA OUTUBRO E NOVEMBRO 2023<br>1 Dia", "/images/ingressos/thermas.jpg", "Thermas dos Laranjais", 150.00m },
+                    { 4, "HORA DO HORROR<br>1 Dia", "/images/ingressos/hopihari.jpg", "Hopi Hari", 159.90m }
                 });
 
             migrationBuilder.InsertData(
@@ -320,10 +320,10 @@ namespace AmandaViagens.Migrations
                 columns: new[] { "Id", "Descricao", "Icone", "Image", "Nome" },
                 values: new object[,]
                 {
-                    { 1, "Rio de Janeiro<br>De braços abertos sobre a Guanabara, o Cristo Redentor recebe os visitantes e abençoa os cariocas.", "images/backpack.png", "images/pontos/cristo.jpg", "Cristo Redentor" },
-                    { 2, "Paris<br>Esta joia da paisagem parisiense e símbolo máximo da França fica ainda mais espetacular quando vista de perto.", "images/backpack.png", "images/pontos/torre.jpg", "Torre Eiffel" },
-                    { 3, "República Dominicana<br>A tropical Punta Cana se orgulha de ser um dos melhores destinos do Caribe, e sua fama é, de fato, justificada.", "images/island_t.png", "images/pontos/praia.jpeg", "Punta Cana" },
-                    { 4, "Rio Grande do Sul<br>Romântica, charmosa, cheia de cultura, belas paisagens, atrações e ótima culinária.", "images/backpack.png", "images/pontos/sul.jpeg", "Gramado" }
+                    { 1, "Rio de Janeiro<br>De braços abertos sobre a Guanabara, o Cristo Redentor recebe os visitantes e abençoa os cariocas.", "/images/backpack.png", "/images/pontos/cristo.jpg", "Cristo Redentor" },
+                    { 2, "Paris<br>Esta joia da paisagem parisiense e símbolo máximo da França fica ainda mais espetacular quando vista de perto.", "/images/backpack.png", "/images/pontos/torre.jpg", "Torre Eiffel" },
+                    { 3, "República Dominicana<br>A tropical Punta Cana se orgulha de ser um dos melhores destinos do Caribe, e sua fama é, de fato, justificada.", "/images/island_t.png", "/images/pontos/praia.jpeg", "Punta Cana" },
+                    { 4, "Rio Grande do Sul<br>Romântica, charmosa, cheia de cultura, belas paisagens, atrações e ótima culinária.", "/images/backpack.png", "/images/pontos/sul.jpeg", "Gramado" }
                 });
 
             migrationBuilder.InsertData(
@@ -331,15 +331,15 @@ namespace AmandaViagens.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "1d5e6056-50e7-4c92-b317-c69c7530173b", "d3f71486-1d92-49c4-b91b-11ec39e4415f" },
-                    { "76ab57bc-915f-4c26-af27-04fabf0a4ce2", "d3f71486-1d92-49c4-b91b-11ec39e4415f" },
-                    { "ea82e20c-5f9e-4d5a-9a5b-d52385b0797f", "d3f71486-1d92-49c4-b91b-11ec39e4415f" }
+                    { "0055bc0c-de41-4dd1-a12d-466d4cd317de", "43df1122-c9d2-4c4e-a38b-72dd9333f64f" },
+                    { "36c76f25-c208-403a-8267-b5e4d0b4b6bc", "43df1122-c9d2-4c4e-a38b-72dd9333f64f" },
+                    { "ded120eb-7b7e-4771-8f50-1fc81cefcabe", "43df1122-c9d2-4c4e-a38b-72dd9333f64f" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Usuario",
                 columns: new[] { "UsuarioId", "Foto", "Nome" },
-                values: new object[] { "d3f71486-1d92-49c4-b91b-11ec39e4415f", "/images/avatar.png", "Marina Porfirio" });
+                values: new object[] { "43df1122-c9d2-4c4e-a38b-72dd9333f64f", "/images/avatar.png", "Marina Porfirio" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

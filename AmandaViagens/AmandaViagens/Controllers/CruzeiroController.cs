@@ -76,7 +76,7 @@ namespace AmandaViagens.Controllers
                         formFile.CopyTo(stream);
                     }
 
-                    cruzeiro.Image = @"images/cruzeiros/" + fileName;
+                    cruzeiro.Image = @"/images/cruzeiros/" + fileName;
                     await _context.SaveChangesAsync();
                 }
 
@@ -136,7 +136,7 @@ namespace AmandaViagens.Controllers
                         {
                             formFile.CopyTo(stream);
                         }
-                        cruzeiro.Image = @"\images\cruzeiros\" + fileName;
+                        cruzeiro.Image = @"/images/cruzeiros/" + fileName;
                     }
 
                     _context.Update(cruzeiro);

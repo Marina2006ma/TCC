@@ -15,14 +15,14 @@ public class AppDbSeed
                 Nome = "Msc Preziosa",
                 Descricao = "América do Sul<br>7 Noites<br>Saindo de: Santos (São Paulo) <br>Porto de desembarque: Santos (São Paulo)",
                 Preco = 4590.00M,
-                Image = @"images/cruzeiros/offer_1.jpg"
+                Image = @"/images/cruzeiros/offer_1.jpg"
             },
             new() {
                 Id = 2,
                 Nome = "Costa Fascinosa",
                 Descricao = "América do Sul<br>9 Dias<br>Saindo de: Rio de Janeiro (Rio de Janeiro)<br>Porto de desembarque: Rio de Janeiro (Rio de Janeiro)",
                 Preco = 4646.25M,
-                Image = @"images/cruzeiros/offer_2.jpg"
+                Image = @"/images/cruzeiros/offer_2.jpg"
             },
 
              new() {
@@ -30,7 +30,7 @@ public class AppDbSeed
                 Nome = "Norwegian Spirit",
                 Descricao = "Pacífico Sul: Kauai & Moorea<br>12 Dias<br>Saindo de: Honolulu, Oahu<br>Porto de desembarque: Papeete, Taiti, Polinésia Francesa",
                 Preco = 3463.00M,
-                Image = @"images/cruzeiros/offer_3.jpg"
+                Image = @"/images/cruzeiros/offer_3.jpg"
             },
 
              new() {
@@ -38,7 +38,7 @@ public class AppDbSeed
                 Nome = "Rhapsody of the Seas",
                 Descricao = "Bahamas & Perfect Day Cruise<br>3 Noites<br>Saindo de: Fort Lauderdale, Flórida<br>Porto de desembarque: Fort Lauderdale, Flórida",
                 Preco = 941.00M,
-                Image = @"images/cruzeiros/offer_4.jpg"
+                Image = @"/images/cruzeiros/offer_4.jpg"
             }
         };
         builder.Entity<Cruzeiro>().HasData(cruzeiros);
@@ -51,7 +51,7 @@ public class AppDbSeed
                 Nome = "Walt Disney World",
                 Descricao = "INGRESSOS PARA OS PARQUES TEMÁTICOS WALT DISNEY WORLD<br>1 Dia (10 anos ou mais)",
                 Preco = 548.76M,
-                Image = @"images/ingressos/castelo.jpg"
+                Image = @"/images/ingressos/castelo.jpg"
             },
 
             new() {
@@ -59,7 +59,7 @@ public class AppDbSeed
                 Nome = "Beto Carrero World",
                 Descricao = "PASSAPORTE DE ACESSO 1º LOTE<br>1 Dia (A partir de 05 anos)",
                 Preco = 139.90M,
-                Image = @"images/ingressos/beto.jpg"
+                Image = @"/images/ingressos/beto.jpg"
             },
 
             new() {
@@ -67,7 +67,7 @@ public class AppDbSeed
                 Nome = "Thermas dos Laranjais",
                 Descricao = "INGRESSO DIÁRIO INTEIRA OUTUBRO E NOVEMBRO 2023<br>1 Dia",
                 Preco = 150.00M,
-                Image = @"images/ingressos/thermas.jpg"
+                Image = @"/images/ingressos/thermas.jpg"
             },
 
             new() {
@@ -75,7 +75,7 @@ public class AppDbSeed
                 Nome = "Hopi Hari",
                 Descricao = "HORA DO HORROR<br>1 Dia",
                 Preco = 159.90M,
-                Image = @"images/ingressos/hopihari.jpg"
+                Image = @"/images/ingressos/hopihari.jpg"
             }
 
         };
@@ -88,29 +88,29 @@ public class AppDbSeed
                 Id = 1,
                 Nome = "Cristo Redentor",
                 Descricao = "Rio de Janeiro<br>De braços abertos sobre a Guanabara, o Cristo Redentor recebe os visitantes e abençoa os cariocas.",
-                Icone = @"images/backpack.png",
-                Image = @"images/pontos/cristo.jpg"
+                Icone = @"/images/backpack.png",
+                Image = @"/images/pontos/cristo.jpg"
             },
             new() {
                 Id = 2,
                 Nome = "Torre Eiffel",
                 Descricao = "Paris<br>Esta joia da paisagem parisiense e símbolo máximo da França fica ainda mais espetacular quando vista de perto.",
-                Icone = @"images/backpack.png",
-                Image = @"images/pontos/torre.jpg"
+                Icone = @"/images/backpack.png",
+                Image = @"/images/pontos/torre.jpg"
             },
             new() {
                 Id = 3,
                 Nome = "Punta Cana",
                 Descricao = "República Dominicana<br>A tropical Punta Cana se orgulha de ser um dos melhores destinos do Caribe, e sua fama é, de fato, justificada.",
-                Icone = @"images/island_t.png",
-                Image = @"images/pontos/praia.jpeg"
+                Icone = @"/images/island_t.png",
+                Image = @"/images/pontos/praia.jpeg"
             },
             new() {
                 Id = 4,
                 Nome = "Gramado",
                 Descricao = "Rio Grande do Sul<br>Romântica, charmosa, cheia de cultura, belas paisagens, atrações e ótima culinária.",
-                Icone = @"images/backpack.png",
-                Image = @"images/pontos/sul.jpeg"
+                Icone = @"/images/backpack.png",
+                Image = @"/images/pontos/sul.jpeg"
             },
 
         };
