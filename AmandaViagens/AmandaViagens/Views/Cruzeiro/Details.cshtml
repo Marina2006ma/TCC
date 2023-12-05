@@ -9,9 +9,9 @@
 <hr />
 <div class="row">
     <div class="col-md-4 col-sm-12 col-xxl-3">
-        <div class="form-group">
+        <div class="form-group mb-3">
             <label asp-for="Image" class="form-label"></label>
-            <img src='@Url.Content("~/" + Model.Image)' class="img-fluid w-100">
+            <img src='@Model.Image'  class="img-fluid w-100">
         </div>
     </div>
     <div class="col-md-8 col-sm-12 col-xxl-9">
